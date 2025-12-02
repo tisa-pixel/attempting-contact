@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <description>Triggers when Lead enters Attempting_Contact status. Creates Day 0 immediate tasks and schedules +4 hour task.</description>
+    <interviewLabel>REI Lead Cadence Entry {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>REI Lead Cadence Entry</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Day_0_Immediate_Tasks</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Attempting_Contact</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Four_Hour_Path</name>
+            <connector>
+                <targetReference>Create_Day_0_Four_Hour_Task</targetReference>
+            </connector>
+            <label>4 Hours Later</label>
+            <offsetNumber>4</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+
+    <!-- Action: Create Day 0 Immediate Tasks -->
+    <actionCalls>
+        <name>Create_Day_0_Immediate_Tasks</name>
+        <label>Create Day 0 Immediate Tasks</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <actionName>REILeadCadenceDay0Immediate</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>leadId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+
+    <!-- Action: Create Day 0 Four Hour Task -->
+    <actionCalls>
+        <name>Create_Day_0_Four_Hour_Task</name>
+        <label>Create Day 0 Four Hour Task</label>
+        <locationX>314</locationX>
+        <locationY>134</locationY>
+        <actionName>REILeadCadenceDay0FourHour</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>leadId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+</Flow>

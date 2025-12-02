@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Day 13 - Permission to Close File Email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>AC Permission to Close</name>
+    <style>none</style>
+    <subject>Can I close your file?</subject>
+    <type>text</type>
+</EmailTemplate>

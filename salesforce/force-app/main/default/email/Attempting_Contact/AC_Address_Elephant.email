@@ -1,0 +1,28 @@
+Hi {!Lead.FirstName},
+
+You're probably thinking one of these:
+
+1. "This sounds like a lowball"
+2. "I need to talk to my family first"
+3. "I'm not sure I'm ready to sell"
+4. "I want to see what a realtor says"
+
+All totally valid.
+
+Here's what I've learned working with homeowners in {!Lead.Property_City__c}:
+
+The people who sell to us are usually in one of these situations:
+→ They inherited a property they don't want
+→ They're tired of being a landlord
+→ The house needs work they can't afford or don't want to deal with
+→ They need to sell fast (divorce, relocation, financial pressure)
+
+Does any of that sound familiar?
+
+If not - if you have time and the house is in great shape - you'll probably get more money listing it traditionally.
+
+But if you're in one of those situations above, we might be able to help.
+
+What's really going on with {!Lead.Property_Address__c}?
+
+{!Lead.OwnerFirstName}

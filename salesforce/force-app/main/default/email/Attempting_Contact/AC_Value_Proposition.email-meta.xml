@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Day 1 - Value Proposition Email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>AC Value Proposition</name>
+    <style>none</style>
+    <subject>What makes us different (probably not what you think)</subject>
+    <type>text</type>
+</EmailTemplate>

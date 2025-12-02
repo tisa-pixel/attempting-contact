@@ -1,0 +1,14 @@
+Hi {!Lead.FirstName},
+
+I'm {!Lead.OwnerFirstName}. Just tried calling you about {!Lead.Property_Address__c}.
+
+It sounds like you might be weighing your options on what to do with the property.
+
+I work with homeowners in {!Lead.Property_City__c} who are in similar situations - some need to sell quickly, some just want to know what it's worth, some are testing the waters.
+
+What makes the most sense for you right now?
+
+No pressure either way.
+
+{!Lead.OwnerFirstName}
+{!Lead.OwnerPhone}

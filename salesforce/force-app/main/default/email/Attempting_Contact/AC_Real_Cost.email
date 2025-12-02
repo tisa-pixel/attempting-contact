@@ -1,0 +1,37 @@
+Hi {!Lead.FirstName},
+
+Let's talk about the elephant in the room.
+
+You're probably thinking: "If I list with a realtor, I'll get more money."
+
+And you might be right.
+
+But here's what that actually looks like:
+
+Say {!Lead.Property_Address__c} is worth $300k:
+→ 6% realtor commission: -$18,000
+→ Closing costs (2-3%): -$7,500
+→ Repairs from inspection: -$5,000 to $20,000
+→ Staging/photos: -$2,000
+→ Time on market: 60-90 days
+→ Mortgage/taxes/insurance while it sits: -$3,000+
+
+Net after all that: ~$265,000
+Time invested: 3-4 months
+
+With us:
+→ Offer: $260,000
+→ Your costs: $0
+→ Time to close: 10 days
+
+So the question isn't "who pays more."
+
+The question is: What's worth more to you - an extra $5,000 or 3 months of your life?
+
+That's not a trick question. For some people, the answer is "give me the $5k."
+
+For others, it's "I just want this handled."
+
+Which one sounds like you?
+
+{!Lead.OwnerFirstName}

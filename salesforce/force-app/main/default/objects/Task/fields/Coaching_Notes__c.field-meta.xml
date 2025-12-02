@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coaching_Notes__c</fullName>
+    <label>Coaching Notes</label>
+    <type>LongTextArea</type>
+    <length>5000</length>
+    <visibleLines>4</visibleLines>
+    <required>false</required>
+    <externalId>false</externalId>
+    <trackFeedHistory>false</trackFeedHistory>
+    <description>Explains why this technique works - coaching for the rep</description>
+</CustomField>
