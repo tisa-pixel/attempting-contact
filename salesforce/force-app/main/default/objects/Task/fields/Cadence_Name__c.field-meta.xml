@@ -6,6 +6,5 @@
     <length>50</length>
     <required>false</required>
     <externalId>false</externalId>
-    <trackFeedHistory>false</trackFeedHistory>
-    <description>Identifies which cadence created this task (e.g., "Attempting Contact")</description>
+    <description>Identifies which cadence created this task (e.g., Attempting Contact)</description>
 </CustomField>

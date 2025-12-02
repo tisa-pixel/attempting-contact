@@ -7,6 +7,5 @@
     <scale>0</scale>
     <required>false</required>
     <externalId>false</externalId>
-    <trackFeedHistory>false</trackFeedHistory>
     <description>Which day in the cadence this task belongs to (0-14)</description>
 </CustomField>

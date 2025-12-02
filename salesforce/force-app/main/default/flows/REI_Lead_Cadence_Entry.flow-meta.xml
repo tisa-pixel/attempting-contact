@@ -17,6 +17,7 @@
         <connector>
             <targetReference>Create_Day_0_Immediate_Tasks</targetReference>
         </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Status</field>
@@ -25,15 +26,8 @@
                 <stringValue>Attempting_Contact</stringValue>
             </value>
         </filters>
-        <filters>
-            <field>Status</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
         <object>Lead</object>
-        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <recordTriggerType>Update</recordTriggerType>
         <scheduledPaths>
             <name>Four_Hour_Path</name>
             <connector>
