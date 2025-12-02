@@ -42,6 +42,18 @@
     </start>
     <status>Active</status>
 
+    <!-- Variable to store Lead ID -->
+    <variables>
+        <name>varLeadId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Record.Id</elementReference>
+        </value>
+    </variables>
+
     <!-- Action: Create Day 0 Immediate Tasks -->
     <actionCalls>
         <name>Create_Day_0_Immediate_Tasks</name>
